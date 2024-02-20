@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+// NAVBAR
+
+.nav{
+    // background-color: black;
+    // color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+
+    &-logo{
+       display: flex;
+       align-items: center;
+       font-family: system-ui, Open Sans ;
+       gap: 10px;
+       cursor: pointer;
+       
+       img{
+           width: 2rem;
+        }
+    }
+    
+    ul{
+        font-family: system-ui, Open Sans ;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        cursor: pointer;
+    }
+    &-line{
+        border-left: 2px solid black;
+        height:1.2rem;
+        border-radius: 2px;
+    }
+}
+
+// HERO
+
+.hero{
+    background: linear-gradient(to bottom, rgb(206, 123, 123) 10%, rgb(111, 165, 161) 20%);
+    height: 91vh;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    font-family: system-ui, Open Sans ;
+    
+    h1{
+        font-size: 40px;
+        padding: 5rem 0 0 5rem;
+    }
+    &-content{
+        
+        h2{
+            padding: 2rem 0 1rem 5rem;
+        }
+        &-buttons{
+            margin: 2rem 0 1rem 5rem;
+            &-1{
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                border: 1px solid white;
+                background-color: rgb(233, 154, 154);
+                font-weight: bold;
+                font-size: 16px;
+
+            }
+            &-2{
+                padding: 1rem 3rem;
+                border-radius: 2rem;
+                border: 1px solid white;
+                margin-left: 1rem;
+                background-color: rgb(69, 136, 134);
+                font-weight: bold;
+                font-size: 16px;
+            }
+            &-1:hover{
+                color: white;
+                cursor: pointer;
+                background-color: rgb(174, 99, 99);
+
+            }
+            &-2:hover{
+                color: white;
+                cursor: pointer;
+                background-color: rgb(154, 233, 200);;
+            }
+        }
+        p{
+            padding: 2rem 0 0 5rem;
+            span{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    img:nth-child(1){
+        position: absolute;
+        transform: rotate(20deg);
+        left: 60rem;
+        top: 5rem;
+        background: linear-gradient(to right, green 10%, white 20%);
+        width: 30rem;
+        border-radius: 10px;
+        box-shadow: 10px 2px 20px 1px (rgb(8, 60, 56));
+    }
+    img:nth-child(2){
+        position: absolute;
+        transform: rotate(-20deg);
+        left: 45rem;
+        top: 20rem;
+        background: linear-gradient(to right, green 10%, white 20%);
+        width: 30rem;
+        border-radius: 10px;
+        box-shadow: 5px 0px 50px 10px (rgb(61, 95, 95));
+    }
+    img:nth-child(3){
+        position: absolute;
+        transform: rotate(50deg);
+        left: 72rem;
+        top: 20rem;
+        background: linear-gradient(to right, green 10%, white 20%);
+        width: 30rem;
+        border-radius: 10px;
+        box-shadow: 10px 2px 20px 1px (rgb(8, 60, 56));
+    }
+}
+.footer{
+    position: absolute;
+    bottom: 2rem;
+    color: white;
+    font-family: system-ui, Open Sans ;
+    // margin-left: 10rem;
+    h1{
+        font-size: 40px;
+        margin-left: 38rem;
+    }
+    h2{
+        margin-left: 34rem;
+        font-size: 028x;
+        font-weight: 300;
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+}
+.p{
+    text-align: center;
+    font-size: 20px;
+}
